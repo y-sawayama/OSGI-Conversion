@@ -11,7 +11,7 @@ def option():
 
 
 def convertionToOSGInode(): 
-    rename_file = option().replace(".config", ".xml")
+    rename_file = option().src.replace(".config", ".xml")
 
     with open(option().src) as before_file, open(shutil.copy(option().src, rename_file), "w", newline="\n") as new_file:
 
